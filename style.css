@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: hsl(216, 12%, 8%);
+}
+
+.rating {
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4em 1.7em;
+    background: hsl(213, 19%, 18%);
+    border-radius: 1.8em;
+    /* display: none; */
+}
+
+.rating .img {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: hsla(216, 12%, 54%, .2);
+    padding: 1.5em;
+    border-radius: 50%;
+    margin: 1em 0 1.6em;
+}
+
+.img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rating h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.4em;
+    margin-bottom: .5em;
+
+}
+
+.rating p {
+    color: hsl(217, 12%, 63%);
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.rating .num {
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    font-size: 1.4em;
+    margin: 1.3em 0
+}
+
+.num span {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1.3em;
+    margin-right: 1em;
+    background: hsla(216, 12%, 54%, .2);
+    cursor: pointer;
+}
+
+.num span:hover {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.rating button {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: hsl(25, 97%, 53%);
+    padding: .6em;
+    border-radius: 3em;
+    font-size: 1.2em;
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.rating button:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you {
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: hsl(213, 19%, 18%);
+    border-radius: 1.8em;
+    padding: 1.3em;
+    display: none;
+}
+
+.thank-you img {
+    width: 170px;
+    height: 100px;
+    align-self: center;
+    margin: 1.4em 0;
+}
+
+.thank-you .rate {
+    width: 60%;
+    padding: .5em .8em;
+    align-self: center;
+    text-align: center;
+    background: hsla(216, 12%, 54%, .1);
+    border-radius: 1.4em;
+    color: hsl(25, 97%, 53%);
+}
+
+.thank-you h2 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: .5em 0 .5em;
+}
+
+.thank-you p{
+    text-align: center;
+    align-self: center;
+    color: hsl(216, 12%, 54%);
+    line-height: 1.4em;
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 1.2em;
+}
